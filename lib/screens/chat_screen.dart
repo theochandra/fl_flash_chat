@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import 'package:fl_flash_chat/constants.dart';
 
 class ChatScreen extends StatefulWidget {
+
+  static const routeName = 'chat_screen';
+
   @override
   _ChatScreenState createState() => _ChatScreenState();
 }
