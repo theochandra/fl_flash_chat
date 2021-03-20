@@ -1,15 +1,20 @@
+import './screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(FlashChat());
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Container(),
+      theme: ThemeData.dark().copyWith(
+        textTheme: TextTheme(
+          bodyText2: TextStyle(color: Colors.black54),
+        ),
+      ),
+      home: WelcomeScreen(),
     );
   }
 }
